@@ -17,9 +17,9 @@ const Header = () => {
                         <Link to="/services" className="item">
                             Services
                         </Link>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <Link to="/services/dealer-service" className="item">Dealer Service</Link>
+                        <i className="dropdown icon"></i>
+                        <div className="menu">
+                            <Link to="/services/broker-service" className="item">Broker</Link>
                             <Link to="/services/detailing" className="item">Detailing</Link>
                             <Link to="/services/odor-remediation" className="item">Odor Remediation</Link>
                         </div>

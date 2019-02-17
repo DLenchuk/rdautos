@@ -19,9 +19,9 @@ class BrokerForm extends React.Component {
         return (
             <div  >
                 <form name="contact" method="post" data-netlify="true" onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form" >
-                    <Field name="firstName" component={this.renderInput} label="First Name" placeholder="John" />
-                    <Field name="lastName" component={this.renderInput} label="Last Name" placeholder="Smith" />
-                    <Field name="email" component={this.renderInput} label="Email" placeholder="johnsmith@email.com" />
+                    <Field name="firstName" type="text" component={this.renderInput} label="First Name" placeholder="John" />
+                    <Field name="lastName" type="text" component={this.renderInput} label="Last Name" placeholder="Smith" />
+                    <Field name="email" type="email" component={this.renderInput} label="Email" placeholder="johnsmith@email.com" />
                     <button className="ui button primary">Submit</button>
                 </form>
             </div>

@@ -11,7 +11,7 @@ class BrokerServiceScreen extends React.Component {
                 <Banner bannerTitle="Broker Service" style={{ backgroundColor:'green', height:'100px', display:'flex', justifyContent: 'center'}} />
                 <hr/>
                 <div className="ui grid container" style={{ paddingTop:"3rem", justifyContent:"center" }} >
-                    <BrokerServiceSummary />
+                    <BrokerServiceSummary textContainerStyle={{ width:"60%" }} />
                     <BrokerForm />
                 </div>
             </div>

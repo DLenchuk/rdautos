@@ -11,13 +11,18 @@ class BrokerForm extends React.Component {
         );
     }
 
+    onSubmit(formValues) {
+        window.alert(formValues);
+    }
+
     render() {
         return (
-            <div style={{ border:"solid", borderColor:"black", borderWidth:"2px" }} >
-                <form>
+            <div  >
+                <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form" >
                     <Field name="firstName" component={this.renderInput} label="First Name" placeholder="John" />
                     <Field name="lastName" component={this.renderInput} label="Last Name" placeholder="Smith" />
                     <Field name="email" component={this.renderInput} label="Email" placeholder="johnsmith@email.com" />
+                    <button className="ui button primary">Submit</button>
                 </form>
             </div>
         );
